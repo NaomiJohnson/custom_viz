@@ -1,5 +1,12 @@
 looker.plugins.visualizations.add({
     create: function(element, config) {
+        
+        element.innerHTML = `
+            <style>
+            .error_chart {
+                width="500"; height="300"
+            }
+            </style>`;
 
         element.innerHTML = css;
     var container = element.appendChild(document.createElement("div")); // Create a container element to let us center the text.
